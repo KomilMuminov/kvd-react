@@ -1,0 +1,17 @@
+import React from 'react';
+
+const ToDo = ({ todo, removeTask }) => {
+  return (
+    <>
+      <div key={todo.id} className="item-todo">
+        <div className={todo.complete ? 'item-text strike' : 'item-text'}>
+          {todo.task}
+        </div>
+        <div className="item-delete" onClick={() => removeTask(todo.id)}>
+          <button>Удалить</button>
+        </div>
+      </div>
+    </>
+  );
+};
+export default ToDo;
