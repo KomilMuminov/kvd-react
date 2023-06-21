@@ -1,6 +1,6 @@
-import React from 'react'
-import ToDoRender from './ToDoRender'
- const App = () => {
+import React from 'react';
+import ToDoRender from './ToDoRender';
+const App = () => {
   return (
     <>
       {/* <ArrMethods/> */}
@@ -9,8 +9,8 @@ import ToDoRender from './ToDoRender'
       {/* <Memo/> */}
       {/* <UsReduce/> */}
       {/* <UEffect/> */}
-      <ToDoRender/>
+      <ToDoRender />
     </>
-  )
-}
+  );
+};
 export default App;

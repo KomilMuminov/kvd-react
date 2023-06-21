@@ -1,4 +1,9 @@
 import React from 'react';
+import '@fontsource/roboto/300.css';
+import '@fontsource/roboto/400.css';
+import '@fontsource/roboto/500.css';
+import '@fontsource/roboto/700.css';
+import {Button } from '@mui/material';
 
 const ToDo = ({ todo, removeTask }) => {
   return (
@@ -8,10 +13,14 @@ const ToDo = ({ todo, removeTask }) => {
           {todo.task}
         </div>
         <div className="item-delete" onClick={() => removeTask(todo.id)}>
-          <button>Удалить</button>
+          <Button variant='contained'>Удалить</Button>
         </div>
       </div>
+      
     </>
   );
 };
 export default ToDo;
+
+
+

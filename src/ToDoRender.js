@@ -1,6 +1,7 @@
 import React from 'react';
 import ToDoForm from './ToDoForm';
 import ToDo from './ToDo';
+import { Typography } from '@mui/material';
 const ToDoRender = () => {
   const [todos, setTodos] = React.useState([]);
   const addTask = (userInput) => {
@@ -21,19 +22,11 @@ const ToDoRender = () => {
   return (
     <>
       <div>
-        <header>
-            <h2>ToDo List</h2>
-          <h3>Список задач: {todos.length} </h3>
-        </header>
+        <Typography variant="h3">ToDo List</Typography>
+        <h3>Список задач: {todos.length} </h3>
         <ToDoForm addTask={addTask} />
         {todos.map((todo) => {
-          return (
-            <ToDo
-              key={todo.id}
-              todo={todo}
-              removeTask={removeTask}
-            />
-          );
+          return <ToDo key={todo.id} todo={todo} removeTask={removeTask} />;
         })}
       </div>
     </>

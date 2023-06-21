@@ -1,4 +1,5 @@
 import React from 'react';
+import { Button } from '@mui/material';
 
 const ToDoForm = ({ addTask }) => {
   const [userInput, setUserInput] = React.useState('');
@@ -29,7 +30,7 @@ const ToDoForm = ({ addTask }) => {
               onKeyDown={handleKeyDown}
               placeholder="Введите задачу"
             />
-            <button>Сохранить</button>
+            <Button id="btnSubmit" variant='contained' onClick={handleSubmit}>Добавить задачу</Button>
           </form>
         </div>
       </div>
