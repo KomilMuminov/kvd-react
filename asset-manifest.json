@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/kvd-react/static/css/main.aa15cea2.css",
+    "main.js": "/kvd-react/static/js/main.2b9a126a.js",
+    "static/js/787.e5f56525.chunk.js": "/kvd-react/static/js/787.e5f56525.chunk.js",
+    "index.html": "/kvd-react/index.html",
+    "main.aa15cea2.css.map": "/kvd-react/static/css/main.aa15cea2.css.map",
+    "main.2b9a126a.js.map": "/kvd-react/static/js/main.2b9a126a.js.map",
+    "787.e5f56525.chunk.js.map": "/kvd-react/static/js/787.e5f56525.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.aa15cea2.css",
+    "static/js/main.2b9a126a.js"
+  ]
+}
